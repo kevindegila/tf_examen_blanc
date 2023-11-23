@@ -12,6 +12,7 @@ model = _
 # Evaluation
 
 test_loss = model.evaluate(test_images, test_labels)
-     
+print(test_loss)
+
 # Sauvegarde
 model.save("exercice3.h5")
