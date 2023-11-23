@@ -45,3 +45,7 @@ results = np.array(forecast)[:, 0, 0]
 # evaluation
 
 tf.keras.metrics.mean_absolute_error(x_valid, results).numpy()
+
+
+# save 
+model.save('exercice5.h5')
